@@ -1,0 +1,83 @@
+<!-- @format -->
+{% extends 'base.html' %} {% load static %} {% block title %}Home{% endblock %}
+{% block content %}
+<head>
+<!--        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
+-->
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/templatemo-ebook-landing.css' %}" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<main>
+   
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-12">
+                            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+				   <h4>Table of contents</h4>
+                                    <a href="javascript:void(0)" data-file="index.html">Introduction</a>
+						      
+                                    <a href="javascript:void(0)"
+				     data-file="/pages/item2.html">Chapter 1: <strong>Win back your time</strong></a>
+						      
+				    <a href="javascript:void(0)" data-file="item3.html">Chapter 2: <strong>Work less, do more</strong></a>
+						      
+                                    <a href="javascript:void(0)" data-file="item4.html">Chapter 3: <strong>Delegate</strong></a>
+						      
+				    <a href="javascript:void(0)" data-file="item5.html">Chapter 4: <strong>Habits</strong></a>
+                            </nav>
+
+                        </div>
+<div class="col-lg-10 col-12">
+ <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2 tutorial-content" id="tutorial-content">   
+    </div>
+ </div>
+        <!-- Tutorial content will be dynamically loaded here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script2.js"></script>
+			
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/jquery.sticky.js' %}"></script>
+        <script src="{% static 'js/click-scroll.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+        <script src="{% static 'js/script2.js' %}"></script>
+
+{% endblock %}
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Welcome to My Website</h1>
+
+    <nav id="toc-container">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <div id="content-container"></div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,69 @@
+<!-- @format -->
+{% extends 'base.html' %} {% load static %} {% block title %}Home{% endblock %}
+{% block content %}
+<head>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/templatemo-ebook-landing.css' %}" rel="stylesheet">
+</head>
+<br/>
+<br/>
+<br/>
+<main>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-12">
+                            <nav id="toc-container" class="h-100 flex-column align-items-stretch">
+				   <h4>Table of contents</h4>
+				   <a href="{% url 'jitem1' %}">Introduction
+				      (item1.html)</a>
+				   <a href="{% url 'jitem2' %}">Section 1 (item2.html)</a>
+				  <a href="{% url 'jitem3' %}">Section 2 (item3.html)</a>
+                            </nav>
+
+                        </div>
+<div class="col-lg-10 col-12" id="content-container">
+ <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2 tutorial-content">   
+
+                                    <h5>Java: Work less, do more</h5>
+
+                                    <p>Credit goes to
+				       <a rel="nofollow" href="#" target="_blank">FreePik</a> for images used in this ebook landing page template. You may browse FreePik to download more free images for your website.</p>
+                                    <p>This is a second paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt ut labore.</p>
+
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-12">
+                                            <img src="{% static 'images/tablet-screen-contents.jpg' %}" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <p>Modern ebook ever</p>
+
+                                            <p><strong>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt.</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+				<!-- Tutorial content will be dynamically loaded here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script2.js"></script>
+			
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/jquery.sticky.js' %}"></script>
+        <script src="{% static 'js/click-scroll.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,77 @@
+<!-- @format -->
+
+{% load static %}
+<style>
+   .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: black;
+}
+</style>
+  <nav id="navbar" class="navbar p-md-0 navbar-expand-sm navbar-light border-bottom fixed-top">
+<a class="navbar-toggler text-white" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<svg class="svg-icon" style="width: 2em; height: 2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M232.369231 282.813046h559.261538a31.507692 31.507692 0 0 0 0-63.015384h-559.261538a31.507692 31.507692 0 0 0 0 63.015384zM791.630769 480.492308h-559.261538a31.507692 31.507692 0 0 0 0 63.015384h559.261538a31.507692 31.507692 0 0 0 0-63.015384zM791.630769 741.186954h-559.261538a31.507692 31.507692 0 0 0 0 63.015384h559.261538a31.507692 31.507692 0 0 0 0-63.015384z"  /></svg></a>
+	
+     <!--    <div class="container">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTop4"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>-->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+	   <li><a class="navbar-brand  text-white"
+	   href="/">&nbsp;&nbsp;iSchooly</a>	</li>
+          <li class="nav-item dropdown">
+	  <a href="{% url 'item1' %}" class="nav-link text-white">Python</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="{% url 'jitem1' %}" class="nav-link text-white">Java</a>
+          </li>
+
+	      <li class="nav-item dropdown"><a href="#" class="nav-link text-white">C</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">C++</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">C#</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">PHP</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">Javascript</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">Boostrap</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">HTML</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">CSS</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">MySQL</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">MongoDB</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">NodeJS</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">Angular</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">React</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link text-white">SQL</a></li>
+
+	  
+        </ul>
+        <ul class="navbar-nav">
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="fa fa-phone"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- container //  -->
+  </nav>
+
+  <!-- header-main .// -->
+<!-- section-header.// -->

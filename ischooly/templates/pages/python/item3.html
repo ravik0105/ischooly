@@ -1,0 +1,76 @@
+<!-- @format -->
+{% extends 'base.html' %} {% load static %} {% block title %}Home{% endblock %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'education/assets/css/mycustomstyle.css' %}">
+</head>
+<main>
+ <section>
+  <div class="container">
+   <div class="row">
+    <div class="card col-lg-3 col-12">
+     <nav id="toc-container" class="h-100 flex-column align-items-stretch">
+     <h4>Table of contents</h4>
+      <ul class="tutorial-toc">
+       <li class="heading"><a href="{% url 'item1' %}">Python - Introduction</a></li>
+       <li class="heading"><a href="{% url 'item2' %}">Python - Variables</a></li>
+       <li class="heading"><a href="{% url 'item3' %}">Python - Conditions</a></li> 
+      </ul>
+     </nav>
+    </div>
+    <div class="card col-lg-6 col-12" id="content-container">
+     <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2 tutorial-content">
+            <div class="justify-content-md-end">
+                <a href="{% url 'item2' %}" class="btn btn-secondary btn-sm mr-auto text-white">Previous</a>
+                <a class="btn btn-primary btn-sm ml-auto text-white">&nbsp;&nbsp;Next&nbsp;&nbsp;</a>
+            </div>
+<hr/>
+	<!-- html content should paste here -->
+     <h5>Python - Conditions</h5>
+
+     <p>Credit goes to. <a rel="nofollow" href="#" target="_blank">FreePik</a> for images used in this ebook landing page template. You may browse FreePik to download more free images for your website.</p>
+
+     <p>This is a second paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+
+     <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt ut labore.</p>
+
+     <div class="row align-items-center">
+      <div class="col-lg-6 col-12 mb-2">
+       <img src="{% static 'images/tablet-screen-contents.jpg' %}" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-6 col-12">
+	 <p>Modern ebook ever</p>
+         <p><strong>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt.</strong></p>
+      </div>
+     </div>
+
+     <!-- end html content should paste here -->
+     <!-- previous and next button -->
+     <hr/>
+            <div class="justify-content-md-end">
+                <a href="{% url 'item2' %}" class="btn btn-secondary btn-sm mr-auto text-white">Previous</a>
+                <a class="btn btn-primary btn-sm ml-auto text-white">&nbsp;&nbsp;Next&nbsp;&nbsp;</a>
+            </div>
+     <!-- end previous and next button -->
+
+     </div>
+    </div>
+   <!-- Ads -->
+    <div class="card col-lg-2 col-12" id="content-container">
+     <h6>Reserved for ads</h6>
+    </div>
+   <!-- end Ads -->
+   </div>
+  </div>
+ </section>
+</main>
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script2.js"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+<script src="{% static 'js/click-scroll.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+{% endblock %}

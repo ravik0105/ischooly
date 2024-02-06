@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Left Sidebar (Table of Contents) */
+        .sidebar-left {
+            width: 250px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Add scrollbar for overflow */
+            height: 100vh; /* Set a fixed height for the left sidebar */
+        }
+
+        /* Right Sidebar (Ad Page) */
+        .sidebar-right {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex-grow: 5;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Styles for TOC (Table of Contents) */
+        .toc {
+            margin-bottom: 20px;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        /* Styles for Ads */
+        .ad {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Sidebar (Table of Contents) -->
+    <div class="sidebar-left">
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1 id="section1">Section 1</h1>
+        <p>Your content goes here.</p>
+
+        <h1 id="section2">Section 2</h1>
+        <p>Your content goes here.</p>
+
+        <h1 id="section3">Section 3</h1>
+        <p>Your content goes here.</p>
+        <!-- Add more content as needed -->
+    </div>
+
+    <!-- Right Sidebar (Ad Page) -->
+    <div class="sidebar-right">
+        <div class="ad">
+            <h2>Ad Section</h2>
+            <p>Your ad content goes here.</p>
+        </div>
+    </div>
+
+</body>
+</html>

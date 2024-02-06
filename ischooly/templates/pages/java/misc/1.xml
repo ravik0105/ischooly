@@ -1,0 +1,50 @@
+<main>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="card col-lg-3 col-12">
+                            <nav id="toc-container" class="h-100 flex-column align-items-stretch">
+				   <h4>Table of contents</h4>
+				   <ul class="tutorial-toc">
+				      <li class="heading"><a href="{% url 'jitem1' %}">Introduction
+				      (item1.html)</a></li>
+				   <li class="heading"><a href="{% url 'jitem2' %}">Section 1 (item2.html)</a></li>
+				  <li class="heading"><a href="{% url 'jitem3' %}">Section
+				     2 (item3.html)</a></li> </ul>
+                            </nav>
+
+                        </div>
+<div class="card col-lg-6 col-12" id="content-container">
+ <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2 tutorial-content">   
+<!-- html content should paste here -->
+                                    <h5>Java: Introduction</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                    <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus elementum, tempor risus vel, condimentum orci.</p>
+
+                                    <p>You are not allowed to redistribute this template ZIP file on any other template collection website. Please contact TemplateMo for more information.</p>
+
+				  <div class="row">
+                                        <div class="col-lg-6 col-12 mb-2">
+                                            <img src="{% static 'images/portrait-mature-smiling-authoress-sitting-desk.jpg' %}" class="scrollspy-example-item-image img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-lg-6 col-12 mb-2">
+                                            <img src="{% static 'images/businessman-sitting-by-table-cafe.jpg' %}" class="scrollspy-example-item-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                    <p>If you need some specific CSS templates, you can Google with keywords such as templatemo gallery, templatemo digital marketing, etc.</p>
+<!-- html content should paste here -->
+ </div>
+</div>
+				    <!-- Ads -->
+<div class="card col-lg-2 col-12" id="content-container">
+<h6>Reserved for ads</h6>
+</div>
+				    <!-- Ads -->
+		    </div>
+		</div>
+            </section>
+        </main>

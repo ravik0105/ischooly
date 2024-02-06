@@ -1,0 +1,134 @@
+<!-- @format -->
+{% extends 'base.html' %} {% load static %} {% block title %}Home{% endblock %}
+{% block content %}
+<head>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/templatemo-ebook-landing.css' %}" rel="stylesheet">
+<style>
+body
+{
+    background-color: #f2f2f2;
+}
+li
+{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.row
+{
+    gap: 1.25rem;
+    margin-top: 38px;
+}
+.col-lg-7, .col-12
+{
+    padding-top: 12px;
+    padding-bottom: 12px;	
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+*
+{
+    margin: 0;
+    font: inherit;
+}
+li.heading
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--clr-accent-800);
+    padding: 0.2rem 0.2rem;
+}
+.tutorial-toc li
+{
+    padding: 0 1rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 0.2rem;
+}
+.tutorial-toc a
+{
+    transition: .3s ease;
+    display: inline-block;
+    width: 100%;
+    border-radius: 100vmax;
+    padding: 0.3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a
+{
+    text-decoration-skip-ink: auto;
+    text-decoration: none;
+    color: green;
+}
+	
+</style>
+</head>
+<main>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="card col-lg-3 col-12">
+                            <nav id="toc-container" class="h-100 flex-column align-items-stretch">
+                                   <h4>Table of contents</h4>
+                                   <ul class="tutorial-toc">
+                                   <li class="heading"><a href="{% url 'jitem1' %}">Introduction</a></li>
+                                   <li class="heading"><a href="{% url 'jitem2' %}">Section
+                                      1: Java - Variables</a></li>
+                                  <li class="heading"><a href="{% url 'jitem3' %}">Section 2</a>
+                            </nav>
+
+                        </div>
+<div class="col-lg-10 col-12" id="content-container">
+ <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2 tutorial-content">
+
+                                    <h5>Java: Win back your time</h5>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                    <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus elementum, tempor risus vel, condimentum orci.</p>
+
+                                    <p>You are not allowed to redistribute this template ZIP file on any other template collection website. Please contact TemplateMo for more information.</p>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <img src="{% static 'images/portrait-mature-smiling-authoress-sitting-desk.jpg' %}" class="scrollspy-example-item-image img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <img src="{% static 'images/businessman-sitting-by-table-cafe.jpg' %}" class="scrollspy-example-item-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                    <p>If you need some specific CSS templates, you can Google with keywords such as templatemo gallery, templatemo digital marketing, etc.</p>
+                                </div>
+        <!-- Tutorial content will be dynamically loaded here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script2.js"></script>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/jquery.sticky.js' %}"></script>
+        <script src="{% static 'js/click-scroll.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+{% endblock %}
